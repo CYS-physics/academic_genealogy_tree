@@ -25,7 +25,7 @@ def harvest():
         for e in a:
             b = e.split(">")
             if b[0]in index:
-                if b[0] in d.keys():          # to handle if a thesis has multiple contributor
+                while b[0] in d.keys():          # to handle if a thesis has multiple contributor
                     b[0] += "1"
                 else:
                     pass
